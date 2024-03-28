@@ -1,7 +1,7 @@
 
 
 terraform {
-    cloud {
+  cloud {
     organization = "cstrube"
 
     workspaces {
