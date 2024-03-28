@@ -46,3 +46,12 @@ resource "cloudflare_record" "find" {
   value   = "strubesolutions.com"
   zone_id = "bdec062b6554fe052bd4cb0b4a275a87"
 }
+
+resource "cloudflare_record" "bitwarden" {
+  name    = "bitwarden"
+  proxied = true
+  ttl     = 1
+  type    = "CNAME"
+  value   = "strubesolutions.com"
+  zone_id = "bdec062b6554fe052bd4cb0b4a275a87"
+}
