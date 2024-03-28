@@ -38,3 +38,11 @@ resource "cloudflare_record" "terraform_managed_resource_96dfcd08e9cfcfb0dda018b
   zone_id = "bdec062b6554fe052bd4cb0b4a275a87"
 }
 
+resource "cloudflare_record" "find" {
+  name    = "auth"
+  proxied = true
+  ttl     = 1
+  type    = "CNAME"
+  value   = "strubesolutions.com"
+  zone_id = "bdec062b6554fe052bd4cb0b4a275a87"
+}
